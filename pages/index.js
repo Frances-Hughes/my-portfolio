@@ -34,7 +34,7 @@ const Home = () => {
           </motion.p>
 
           {/* Projects button - mobile view */}
-          <div className="flex justify-center xl:hidden relative">
+          <div className="flex justify-center xl:hidden relative z-10">
             <ProjectsBtn />
           </div>
 
@@ -44,7 +44,7 @@ const Home = () => {
             initial="hidden"
             exit="hidden"
             animate="show"
-            className="hidden xl:flex"
+            className="hidden xl:flex z-10"
           >
             <ProjectsBtn />
           </motion.div>
@@ -61,7 +61,7 @@ const Home = () => {
             exit="hidden"
             animate="show"
             transition={{ duration: 1, ease: "easeInOut" }}
-            className="w-full h-full max-w-[690px] max-h-[690px] absolute -bottom-32 lg:bottom-0 lg:right-[7%]"
+            className="w-full h-full max-w-[520px] max-h-[520px] absolute -bottom-32 lg:bottom-0 lg:right-[5%]"
           >
             <Avatar />
           </motion.div>

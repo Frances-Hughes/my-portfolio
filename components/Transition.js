@@ -15,33 +15,27 @@ const transitionVariants = {
   },
 };
 
+const transitionItems = [
+  { zIndex: 30, backgroundColor: "#00072d", delay: 0.1 },
+  { zIndex: 20, backgroundColor: "#090e2e", delay: 0.3 },
+  { zIndex: 10, backgroundColor: "#070e38", delay: 0.5 },
+];
+
 const Transition = () => {
   return (
     <>
-      <motion.div
-        className="fixed top-0 bottom-0 right-full w-screen h-screen z-30 bg-[#00072d]"
-        variants={transitionVariants}
-        initial="initial"
-        animate="animate"
-        exit="exit"
-        transition={{ delay: 0.1, duration: 0.5, ease: "easeInOut" }}
-      ></motion.div>
-      <motion.div
-        className="fixed top-0 bottom-0 right-full w-screen h-screen z-20 bg-[#090e2e]"
-        variants={transitionVariants}
-        initial="initial"
-        animate="animate"
-        exit="exit"
-        transition={{ delay: 0.3, duration: 0.5, ease: "easeInOut" }}
-      ></motion.div>
-      <motion.div
-        className="fixed top-0 bottom-0 right-full w-screen h-screen z-10 bg-[#070e38]"
-        variants={transitionVariants}
-        initial="initial"
-        animate="animate"
-        exit="exit"
-        transition={{ delay: 0.5, duration: 0.5, ease: "easeInOut" }}
-      ></motion.div>
+      {transitionItems.map((item, index) => (
+        <motion.div
+          key={index}
+          className="fixed top-0 bottom-0 right-full w-screen h-screen"
+          style={{ zIndex: item.zIndex, backgroundColor: item.backgroundColor }}
+          variants={transitionVariants}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          transition={{ delay: item.delay, duration: 0.5, ease: "easeInOut" }}
+        ></motion.div>
+      ))}
     </>
   );
 };
