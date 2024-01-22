@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import Socials from "../components/Socials";
+import { FaRegFilePdf } from "react-icons/fa";
 
 const Header = () => {
   return (
@@ -14,11 +15,19 @@ const Header = () => {
               src={"/headerimage.png"}
               width={50}
               height={50}
-              alt=""
+              alt="logo"
               priority={true}
             />
           </Link>
-          {/* socials */}
+          <a
+            href="/Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-accent transition-all duration-300"
+          >
+            <FaRegFilePdf />
+          </a>
+
           <Socials />
         </div>
       </div>

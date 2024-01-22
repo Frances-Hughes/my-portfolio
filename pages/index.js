@@ -4,6 +4,10 @@ import ProjectsBtn from "../components/ProjectsBtn";
 import Avatar from "../components/Avatar";
 import { fadeIn } from "../variants";
 import { easeInOut, motion } from "framer-motion";
+import Massey from "../components/Massey";
+import DevAcademy from "../components/DevAcademy";
+import AucklandUni from "../components/AucklandUni";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -52,9 +56,38 @@ const Home = () => {
           {/* Background elements */}
           <div className="w-[1200px] h-full absolute right-0 bottom-0">
             <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"></div>
+            <motion.div
+              variants={fadeIn("left", 0.5)}
+              initial="hidden"
+              exit="hidden"
+              animate="show"
+            >
+              <Link
+                href={"https://devacademy.co.nz/"}
+                target="_blank"
+                className="max-w-[120px] max-h-[120px] absolute top-60  lg:right-[25%]"
+              >
+                <DevAcademy />
+              </Link>
+              <Link
+                href={"https://www.auckland.ac.nz/"}
+                target="_blank"
+                className="max-w-[120px] max-h-[120px] absolute top-24  lg:right-[25%]"
+              >
+                <AucklandUni />
+              </Link>
+              <Link
+                href={"https://www.massey.ac.nz/"}
+                target="_blank"
+                className="max-w-[220px] max-h-[220px] absolute top-80  lg:right-[22%]"
+              >
+                <Massey />
+              </Link>
+            </motion.div>
           </div>
 
           {/* Avatar */}
+
           <motion.div
             variants={fadeIn("up", 0.5)}
             initial="hidden"
