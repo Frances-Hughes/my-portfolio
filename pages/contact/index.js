@@ -11,6 +11,29 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    // Validate email format using a simple regular expression
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    // Access field values
+    const userName = e.target.user_name.value;
+    const userEmail = e.target.user_email.value;
+    const subject = e.target.subject.value;
+    const message = e.target.message.value;
+
+    // Check if fields are empty
+    if (!userName || !userEmail || !subject || !message) {
+      alert("Please fill in all required fields");
+      return;
+    }
+
+    // Check if the email is in a valid format
+    if (!emailRegex.test(userEmail)) {
+      // If not valid, display an alert and exit the function
+      alert("Please enter a valid email address");
+      return;
+    }
+
+    // Continue with sending the email if all fields are valid
     emailjs
       .sendForm(
         "service_m54z2da",
@@ -26,6 +49,7 @@ const Contact = () => {
           console.log(error.text);
         }
       );
+
     e.target.reset();
   };
 
@@ -44,7 +68,7 @@ const Contact = () => {
           </motion.h2>
           <motion.form
             ref={form}
-            onSubmit={sendEmail} // Changed onClick to onSubmit
+            onSubmit={sendEmail}
             variants={fadeIn("up", 0.4)}
             initial="hidden"
             exit="hidden"
@@ -68,7 +92,7 @@ const Contact = () => {
             <input
               type="text"
               name="subject"
-              placeholder="subject"
+              placeholder="Subject"
               className="input"
             />
             <textarea
@@ -77,7 +101,7 @@ const Contact = () => {
               className="textarea"
             ></textarea>
             <button
-              type="submit" // Ensured button type is submit for form submission
+              type="submit"
               className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
             >
               <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
@@ -87,6 +111,7 @@ const Contact = () => {
             </button>
           </motion.form>
         </div>
+        <Circles />
       </div>
     </div>
   );
