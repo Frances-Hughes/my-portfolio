@@ -50,9 +50,9 @@ const Carousel = () => {
   const [animateX, setAnimateX] = useState(0);
   const intervalRef = useRef();
   const isReversing = useRef(false);
-  const speed = 4; // Speed of the carousel
+  const speed = 2; // Speed of the carousel
 
-  const totalWidth = logos.reduce((acc, logo) => acc + logo.width, 0);
+  const totalWidth = logos.reduce((acc, logo) => acc + logo.width, 0) - 400 * 2;
 
   useEffect(() => {
     intervalRef.current = setInterval(() => {
@@ -77,19 +77,19 @@ const Carousel = () => {
   }, [totalWidth]);
 
   const pauseAnimation = () => clearInterval(intervalRef.current);
+
   const resumeAnimation = () => {
-    // Resume animation from current position
     intervalRef.current = setInterval(() => {
       setAnimateX((prevX) => {
         let newX = prevX;
         if (isReversing.current) {
           newX = prevX + speed;
-          if (newX >= 0) {
+          if (newX >= 400) {
             isReversing.current = false;
           }
         } else {
           newX = prevX - speed;
-          if (newX <= -totalWidth) {
+          if (newX <= -totalWidth + 400) {
             isReversing.current = true;
           }
         }

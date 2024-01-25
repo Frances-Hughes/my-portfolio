@@ -1,5 +1,12 @@
+import React from "react";
+import AboutMe from "../../components/AboutMe";
+
 const Testimonials = () => {
-  return <div>Testimonials</div>;
+  return (
+    <div>
+      <AboutMe />
+    </div>
+  );
 };
 
 export default Testimonials;

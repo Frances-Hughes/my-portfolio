@@ -24,21 +24,6 @@ const Socials = () => {
       >
         <RiGithubFill />
       </Link>
-
-      <Link
-        href={"https://www.facebook.com/ViveLaFrances/"}
-        target="_blank"
-        className="hover:text-accent transition-all duration-300"
-      >
-        <RiFacebookLine />
-      </Link>
-      <Link
-        href={"https://www.instagram.com/francesroundtheworld/"}
-        target="_blank"
-        className="hover:text-accent transition-all duration-300"
-      >
-        <RiInstagramLine />
-      </Link>
     </div>
   );
 };

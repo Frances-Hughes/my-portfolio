@@ -4,6 +4,7 @@ import { BsArrowRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 import emailjs from "@emailjs/browser";
+import { TypeAnimation } from "react-type-animation";
 
 const Contact = () => {
   const form = useRef();
@@ -58,14 +59,35 @@ const Contact = () => {
       <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
         <div className="flex flex-col w-full max-w-[700px]">
           <motion.h2
-            variants={fadeIn("up", 0.2)}
+            variants={fadeIn("down", 0.2)}
             initial="hidden"
             exit="hidden"
             animate="show"
-            className="h2 text-center mb-12"
+            className="h2 text-center"
           >
-            Let's <span className="text-accent">connect.</span>
+            Get in touch:
           </motion.h2>
+          <motion.h3
+            variants={fadeIn("left", 0.2)}
+            initial="hidden"
+            exit="hidden"
+            animate="show"
+            className="h3 text-center mb-12"
+          >
+            <TypeAnimation
+              sequence={[
+                "Ready to collaborate?",
+                1000,
+                "Send me a message, and let's connect!",
+                1000,
+              ]}
+              wrapper="span"
+              speed={50}
+              style={{ fontSize: "2em", display: "inline-block" }}
+              className="text-accent"
+            />
+          </motion.h3>
+
           <motion.form
             ref={form}
             onSubmit={sendEmail}

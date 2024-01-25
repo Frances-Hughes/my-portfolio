@@ -9,13 +9,14 @@ import DevAcademy from "../components/DevAcademy";
 import AucklandUni from "../components/AucklandUni";
 import Link from "next/link";
 
+import { TypeAnimation } from "react-type-animation";
+
 const Home = () => {
   return (
     <div className="bg-primary/50 h-full">
       <ParticlesContainer />
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/10 to-black/10">
         <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
-          {/* Title and Description */}
           <motion.h1
             variants={fadeIn("right", 0.5)}
             initial="hidden"
@@ -33,8 +34,19 @@ const Home = () => {
             animate="show"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
-            nostrum perspiciatis corporis...
+            <TypeAnimation
+              sequence={[
+                "Trained in full stack developement",
+                1000,
+                "Dabbled in game developement",
+                1000,
+                "Passionate about frontend development!",
+                1000,
+              ]}
+              wrapper="span"
+              speed={50}
+              style={{ fontSize: "2em", display: "inline-block" }}
+            />
           </motion.p>
 
           {/* Projects button - mobile view */}
