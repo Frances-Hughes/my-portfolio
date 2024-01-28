@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
-import AboutMe from "../../components/AboutMe";
+
 // icons
 import {
   FaHtml5,
@@ -114,9 +114,12 @@ const About = () => {
             <span className="text-accent"> stories</span> create magnificent
             designs
           </h2>
-          <div className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
-            <AboutMe />
-          </div>
+          <p className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A maiores
+            repudiandae doloremque sed ducimus, assumenda facere qui molestiae,
+            necessitatibus ratione expedita labore rerum sint libero architecto
+            quisquam tempora? In, modi.
+          </p>
         </div>
         <div className="flex flex-col w-full xl:max-w-[48%] h-[480px]">
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 justify-between">

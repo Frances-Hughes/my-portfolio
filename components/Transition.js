@@ -18,7 +18,7 @@ const transitionVariants = {
 const transitionItems = [
   { zIndex: 30, backgroundColor: "#00072d", delay: 0.1 },
   { zIndex: 20, backgroundColor: "#090e2e", delay: 0.3 },
-  { zIndex: 10, backgroundColor: "#070e38", delay: 0.5 },
+  { zIndex: 10, backgroundColor: "#070e38", delay: 0.4 },
 ];
 
 const Transition = () => {
@@ -33,7 +33,7 @@ const Transition = () => {
           initial="initial"
           animate="animate"
           exit="exit"
-          transition={{ delay: item.delay, duration: 0.5, ease: "easeInOut" }}
+          transition={{ delay: item.delay, duration: 0.3, ease: "easeInOut" }}
         ></motion.div>
       ))}
     </>

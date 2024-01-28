@@ -4,6 +4,7 @@ import PageLayout from "../components/PageLayout";
 import Transition from "../components/Transition";
 import { useRouter } from "next/router";
 import { AnimatePresence, motion } from "framer-motion";
+import "../components/typewriter-effect.css";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
