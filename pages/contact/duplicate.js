@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import Circles from "../../components/Circles";
 import { BsArrowRight } from "react-icons/bs";
 import { motion } from "framer-motion";
@@ -8,66 +8,33 @@ import { TypeAnimation } from "react-type-animation";
 
 const Contact = () => {
   const form = useRef();
-  const [validationMessages, setValidationMessages] = useState({
-    userName: "",
-    userEmail: "",
-    subject: "",
-    message: "",
-  });
 
   const sendEmail = (e) => {
     e.preventDefault();
 
+    // Validate email format using a simple regular expression
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    // Reset validation messages
-    setValidationMessages({
-      userName: "",
-      userEmail: "",
-      subject: "",
-      message: "",
-    });
 
-    let isValid = true;
+    // Access field values
+    const userName = e.target.user_name.value;
+    const userEmail = e.target.user_email.value;
+    const subject = e.target.subject.value;
+    const message = e.target.message.value;
 
-    // Simple form validation
-    if (!e.target.user_name.value) {
-      setValidationMessages((prev) => ({
-        ...prev,
-        userName: "*Required field",
-      }));
-      isValid = false;
-    }
-    if (!e.target.user_email.value) {
-      setValidationMessages((prev) => ({
-        ...prev,
-        userEmail: "*Required field",
-      }));
-      isValid = false;
-    } else if (!emailRegex.test(e.target.user_email.value)) {
-      setValidationMessages((prev) => ({
-        ...prev,
-        userEmail: "Please enter a valid email address",
-      }));
-      isValid = false;
-    }
-    if (!e.target.subject.value) {
-      setValidationMessages((prev) => ({
-        ...prev,
-        subject: "*Required field",
-      }));
-      isValid = false;
-    }
-    if (!e.target.message.value) {
-      setValidationMessages((prev) => ({
-        ...prev,
-        message: "*Required field",
-      }));
-      isValid = false;
+    // Check if fields are empty
+    if (!userName || !userEmail || !subject || !message) {
+      alert("Please fill in all required fields");
+      return;
     }
 
-    if (!isValid) return;
+    // Check if the email is in a valid format
+    if (!emailRegex.test(userEmail)) {
+      // If not valid, display an alert and exit the function
+      alert("Please enter a valid email address");
+      return;
+    }
 
-    // EmailJS sendForm method
+    // Continue with sending the email if all fields are valid
     emailjs
       .sendForm(
         "service_m54z2da",
@@ -78,13 +45,13 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          alert("Your email has been sent!");
-          e.target.reset(); // Reset form fields
         },
         (error) => {
           console.log(error.text);
         }
       );
+
+    e.target.reset();
   };
 
   return (
@@ -96,7 +63,7 @@ const Contact = () => {
             initial="hidden"
             exit="hidden"
             animate="show"
-            className="h2 text-center text-accent"
+            className="h2 text-center"
           >
             Get in touch:
           </motion.h2>
@@ -117,7 +84,7 @@ const Contact = () => {
               wrapper="span"
               speed={50}
               style={{ fontSize: "2em", display: "inline-block" }}
-              className="text-white"
+              className="text-accent"
             />
           </motion.h3>
 
@@ -131,50 +98,30 @@ const Contact = () => {
             className="flex-1 flex flex-col gap-6 w-full mx-auto"
           >
             <div className="flex gap-x-6 w-full">
-              <div className="flex-1 flex flex-col">
-                <div className="h-6 text-accent text-sm">
-                  {validationMessages.userName}
-                </div>
-                <input
-                  type="text"
-                  name="user_name"
-                  placeholder="Your Name"
-                  className="input"
-                />
-              </div>
-              <div className="flex-1 flex flex-col">
-                <div className="h-6 text-accent text-sm">
-                  {validationMessages.userEmail}
-                </div>
-                <input
-                  type="email"
-                  name="user_email"
-                  placeholder="Your Email"
-                  className="input"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col">
-              <div className="h-6 text-accent text-sm">
-                {validationMessages.subject}
-              </div>
               <input
                 type="text"
-                name="subject"
-                placeholder="Subject"
+                name="user_name"
+                placeholder="Your Name"
+                className="input"
+              />
+              <input
+                type="text"
+                name="user_email"
+                placeholder="Your Email"
                 className="input"
               />
             </div>
-            <div className="flex flex-col">
-              <div className="h-6 text-accent text-sm">
-                {validationMessages.message}
-              </div>
-              <textarea
-                name="message"
-                placeholder="Message"
-                className="textarea"
-              ></textarea>
-            </div>
+            <input
+              type="text"
+              name="subject"
+              placeholder="Subject"
+              className="input"
+            />
+            <textarea
+              name="message"
+              placeholder="Message"
+              className="textarea"
+            ></textarea>
             <button
               type="submit"
               className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"

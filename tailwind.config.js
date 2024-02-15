@@ -23,7 +23,7 @@ module.exports = {
     extend: {
       colors: {
         primary: "#00072d",
-        secondary: "#7a82ab", //might change later to 393A47
+        secondary: "#7a82ab",
         accent: "#ff0a54",
       },
       backgroundImage: {
@@ -34,16 +34,18 @@ module.exports = {
       },
       animation: {
         "spin-slow": "spin 6s linear infinite",
+        "spin-slower": "slowSpin 20s linear infinite", // Custom slower spin animation
+      },
+      keyframes: {
+        slowSpin: {
+          from: { transform: "rotate(0deg)" },
+          to: { transform: "rotate(360deg)" },
+        },
       },
       fontFamily: {
         poppins: [`var(--font-poppins)`, "sans-serif"],
         sora: [`var(--font-sora)`, "sans-serif"],
       },
-    },
-  },
-  container: {
-    padding: {
-      DEFAULT: "15px",
     },
   },
   plugins: [require("tailwind-scrollbar")],
