@@ -1,10 +1,27 @@
 import React from "react";
-import AboutMe from "../../components/AboutMe";
+import TestimonialSlider from "../../components/TestimonialSlider";
+import { TypeAnimation } from "react-type-animation";
 
 const Testimonials = () => {
   return (
-    <div>
-      <AboutMe />
+    <div className="h-full py-32 text-center">
+      <div className="container mx-auto h-full flex flex-col justify-center">
+        <div className="mb-8 xl:mb-0 font-bold">
+          <TypeAnimation
+            sequence={["What people say about me:", 1000]}
+            wrapper="span"
+            speed={50}
+            style={{
+              fontSize: "3rem",
+              display: "inline-block",
+            }}
+            className="text-white"
+          />
+        </div>
+        <div>
+          <TestimonialSlider />
+        </div>
+      </div>
     </div>
   );
 };

@@ -7,8 +7,8 @@ const Tech = () => {
     <div className="flex flex-col items-center justify-center h-screen text-center ">
       <div className="mb-8 p-4">
         <h2 className="h2">
-          Technology I have used
-          <span className="text-accent"> since becoming a developer:</span>
+          <span className="text-accent"> Technology I use {""}</span>
+          as a developer:
         </h2>
         <TypeAnimation
           sequence={[

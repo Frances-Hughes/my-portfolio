@@ -109,7 +109,7 @@ const Contact = () => {
           >
             <TypeAnimation
               sequence={[
-                "Ready to collaborate?",
+                "Need a hand in front-end?",
                 1000,
                 "Send me a message, and let's connect!",
                 1000,

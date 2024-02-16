@@ -8,19 +8,19 @@
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets
   .swiper-pagination-bullet {
-  background-color: #e21b0d;
+  background-color: #ff0a54;
 }
 
 .swiper-button-next:after,
 .swiper-button-prev:after,
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
-  color: #e02416;
+  color: #ff0a54;
 }
 
 @layer base {
   body {
-    @apply bg-secondary overflow-auto leading-relaxed;
+    @apply bg-primary overflow-auto leading-relaxed;
   }
   .page {
     @apply w-full overflow-auto h-screen;

@@ -3,79 +3,22 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 import AboutMe from "../../components/AboutMe";
 // icons
-import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaWordpress,
-  FaFigma,
-} from "react-icons/fa";
 
-import {
-  SiNextdotjs,
-  SiTailwindcss,
-  SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
-  SiAuth0,
-} from "react-icons/si";
+// Hobbies
+import { GiMountainClimbing } from "react-icons/gi";
+import { GiGrandPiano } from "react-icons/gi";
+import { GiViolin } from "react-icons/gi";
+import { GiCupcake } from "react-icons/gi";
+import { GiCommercialAirplane } from "react-icons/gi";
+import { GiTennisRacket } from "react-icons/gi";
+import { GiSittingDog } from "react-icons/gi";
+import { GiHiking } from "react-icons/gi";
+import { SiUnrealengine } from "react-icons/si";
+import { SiPlaystation5 } from "react-icons/si";
+import { FaSteam } from "react-icons/fa";
+import { MdOutlineRowing } from "react-icons/md";
 
 const aboutData = [
-  {
-    title: "skills",
-    info: [
-      {
-        title: "Web Development",
-        icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <SiTailwindcss />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <SiAuth0 />,
-          <FaWordpress />,
-        ],
-      },
-      {
-        title: "UI/UX Design",
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
-      },
-    ],
-  },
-  {
-    title: "awards",
-    info: [
-      {
-        title: "Certificate of Distinction - Massey University",
-        years: "2020, 2021",
-      },
-      {
-        title:
-          "Griffith University Rowing Cup (Australia) - Quadruple Scull 1st place",
-        stage: "2019",
-      },
-    ],
-  },
-  {
-    title: "experience",
-    info: [
-      {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
-      },
-      {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
-      },
-      {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
-      },
-    ],
-  },
   {
     title: "Education",
     info: [
@@ -90,9 +33,68 @@ const aboutData = [
         stage: "2023",
       },
       {
-        title: "Bachelor of Arts Degree + Computer Science",
+        title: "Bachelor of Arts Degree + Computer Science papers",
         provider: "The University of Auckland",
         stage: "2012-2017",
+      },
+    ],
+  },
+  {
+    title: "awards",
+    info: [
+      {
+        title: "3 x Certificate of Distinction - Massey University",
+        stage: "2022",
+      },
+      {
+        title:
+          "Griffith University Rowing Cup (Australia) - Quadruple Scull 1st place",
+        stage: "2019",
+      },
+    ],
+  },
+  {
+    title: "experience",
+    info: [
+      {
+        title: "Front-End Developer (Freelance)",
+        stage: "2023 - 2024",
+      },
+      {
+        title: "PCO Officer - ASB Bank",
+        stage: "2022",
+      },
+      {
+        title: "Ministry of Justice",
+        stage: "2016-2022",
+      },
+    ],
+  },
+
+  {
+    title: "Hobbies",
+    info: [
+      {
+        title: "Outdoor",
+        icons: [
+          <GiMountainClimbing />,
+          <MdOutlineRowing />,
+          <GiCommercialAirplane />,
+          <GiTennisRacket />,
+          <GiSittingDog />,
+          <GiHiking />,
+        ],
+      },
+      {
+        title: "Indoor",
+        icons: [
+          <SiUnrealengine />,
+          <SiPlaystation5 />,
+          <FaSteam />,
+          <GiCupcake />,
+          <GiGrandPiano />,
+          <GiViolin />,
+        ],
       },
     ],
   },
@@ -110,16 +112,15 @@ const About = () => {
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         <div className="flex-1 flex flex-col justify-center">
           <h2 className="h2">
-            Captivating
-            <span className="text-accent"> stories</span> create magnificent
-            designs
+            <span className="text-accent"> Front-end developer</span> with a
+            passion. Reach out today!
           </h2>
           <div className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
             <AboutMe />
           </div>
         </div>
         <div className="flex flex-col w-full xl:max-w-[48%] h-[480px]">
-          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 justify-between">
+          <div className="text-xl flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 justify-between">
             {aboutData.map((item, itemIndex) => {
               return (
                 <div
@@ -138,7 +139,7 @@ const About = () => {
               );
             })}
           </div>
-          <div className="p-4  bg-pink-400/10 rounded-lg py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
+          <div className="p-4  bg-white/10 rounded-lg py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
             {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div
