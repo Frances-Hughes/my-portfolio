@@ -24,7 +24,7 @@ const Work = () => {
             sequence={[
               "Want to see more of my projects?",
               1000,
-              "Feel free to check out my other Github repositories in the header",
+              "Feel free to check out my other Github repositories",
               1000,
             ]}
             wrapper="span"
@@ -74,16 +74,16 @@ const Work = () => {
         <p className="relative bg-white/10 backdrop-blur-sm p-4 text-center text-white my-12">
           I have made a range of projects over the past 2 years - from
           university projects, to hobby projects, to building websites for
-          friends, family, and clients. This project, "Movie Manor", was built
+          friends, family, and clients. This project, Movie Manor, was built
           using Material UI, my preferred React component library. It utilizes
           the TMDB API to fetch and display movie data on interactive cards.
           Deployed via Vercel, it offers instant access without the need for
-          manual setup. My repository's source code is available for viewing{" "}
+          manual setup. My repository's source code is available for viewing
           <a
             href="https://www.github.com/Frances-Hughes/movie-manor"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-accent"
+            className="text-accent font-bold pl-1"
           >
             here.
           </a>

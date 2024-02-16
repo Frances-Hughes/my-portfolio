@@ -98,7 +98,7 @@ const Contact = () => {
             animate="show"
             className="h2 text-center text-accent"
           >
-            Get in touch:
+            Get in touch
           </motion.h2>
           <motion.h3
             variants={fadeIn("left", 0.2)}
@@ -111,7 +111,7 @@ const Contact = () => {
               sequence={[
                 "Need a hand in front-end?",
                 1000,
-                "Send me a message, and let's connect!",
+                "Send me a message:",
                 1000,
               ]}
               wrapper="span"
