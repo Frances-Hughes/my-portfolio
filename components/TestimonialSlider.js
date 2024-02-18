@@ -84,13 +84,12 @@ const testimonialData = [
     message:
       "Reliable and trustworthy, Frances is full of creative thinking and is very thorough with her work. Beyond her ability to solve problems quickly and precisely, she also has a lovely and friendly character that makes the people in the room feel warm and welcome.",
   },
-
   {
-    image: "/Natalie.png",
-    name: "Natalie Clark",
-    position: "Court Registry Officer",
+    image: "/Flora.png",
+    name: "Flora Tan",
+    position: "Researcher",
     message:
-      "Having had the privilege of working alongside Frances, I can attest to her exceptional problem-solving skills and rapid learning capabilities.",
+      "I can confidently say that Frances' websites reflect her talent and work ethic. She is very talented and I would definitely highly recommend her for any websites you are wanting to create!",
   },
   {
     image: "/Brook.jpg",
@@ -99,12 +98,20 @@ const testimonialData = [
     message:
       "Frances is used to learning quickly on her feet in a fast-paced environment. She is incredibly goal driven, and always willing to add new skills to her kete.",
   },
+
   {
-    image: "/Flora.png",
-    name: "Flora Tan",
-    position: "Researcher",
+    image: "/Elaine.jpg",
+    name: "Elaine Deng",
+    position: "Associate",
     message:
-      "I can confidently say that Frances' websites reflect her talent and work ethic. She is very talented and I would definitely highly recommend her for any websites you are wanting to create!",
+      "During the time I have known Frances, she has consistently lived out her values of being a kind, reliable, dilligent and sincere person. I have seen her impressive work ethic throughout the years - she goes the extra mile without needing to be asked, and she never stops working on herself.",
+  },
+  {
+    image: "/Natalie.png",
+    name: "Natalie Clark",
+    position: "Court Registry Officer",
+    message:
+      "Having had the privilege of working alongside Frances, I can attest to her exceptional problem-solving skills and rapid learning capabilities.",
   },
   {
     image: "/Cassey.jpg",

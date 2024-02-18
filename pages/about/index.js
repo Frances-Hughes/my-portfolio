@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
-import { fadeIn } from "../../variants";
 import AboutMe from "../../components/AboutMe";
 import Circles from "../../components/Circles";
 
@@ -34,7 +32,8 @@ const aboutData = [
         stage: "2023",
       },
       {
-        title: "Bachelor of Arts Degree + Computer Science papers",
+        title:
+          "Bachelor of Arts Degree (Double Major) + Computer Science papers",
         provider: "The University of Auckland",
         stage: "2012-2017",
       },
@@ -58,15 +57,15 @@ const aboutData = [
     title: "Experience",
     info: [
       {
-        title: "Front-End Developer (Freelance)",
+        title: "Front-End Web Developement (Freelance)",
         stage: "2023 - 2024",
       },
       {
-        title: "PCO Officer - ASB Bank",
+        title: "PCO Officer (Estates Team) - ASB Bank",
         stage: "2022",
       },
       {
-        title: "Ministry of Justice",
+        title: "Ministry of Justice (Auckland DC, Hamilton DC)",
         stage: "2016-2022",
       },
     ],
@@ -135,7 +134,7 @@ const About = () => {
             {aboutData[index].info.map((item, itemIndex) => (
               <div
                 key={itemIndex}
-                className="flex-1 flex flex-col md:flex-row max-w-max gap-x-6 items-center text-white/60"
+                className="flex-1 flex flex-col md:flex-row max-w-max gap-x-14 items-center text-white/60"
               >
                 <div className="font-light mb-2 md:mb-0">{item.title}</div>
                 <div>{item.provider}</div>

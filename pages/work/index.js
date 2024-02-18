@@ -24,7 +24,7 @@ const Work = () => {
             sequence={[
               "Want to see more of my projects?",
               1000,
-              "Feel free to check out my other Github repositories",
+              "Feel free to check out my other Github repositories, or send me a message",
               1000,
             ]}
             wrapper="span"
@@ -78,7 +78,8 @@ const Work = () => {
           using Material UI, my preferred React component library. It utilizes
           the TMDB API to fetch and display movie data on interactive cards.
           Deployed via Vercel, it offers instant access without the need for
-          manual setup. My repository's source code is available for viewing
+          manual setup. The source code for my repository is available for
+          viewing
           <a
             href="https://www.github.com/Frances-Hughes/movie-manor"
             target="_blank"
