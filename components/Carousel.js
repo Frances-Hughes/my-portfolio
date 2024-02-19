@@ -20,7 +20,7 @@ import CPPImage from "../public/Tech/CPP.png";
 import UE5Image from "../public/Tech/U.png";
 import SuperTestImage from "../public/Tech/SuperTest1.png";
 import JestImage from "../public/Tech/Jest.png";
-import FlexBoxImage from "../public/Tech/flex-box.png";
+import FlexBoxImage from "../public/Tech/Flex-box.png";
 import RestAPIsImage from "../public/Tech/RestAPIs.png";
 
 const logos = [

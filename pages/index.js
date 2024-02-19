@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ParticlesContainer from "../components/ParticlesContainer";
+// import ParticlesContainer from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";
 import Avatar from "../components/Avatar";
 import { fadeIn } from "../variants";
@@ -12,7 +12,7 @@ import { TypeAnimation } from "react-type-animation";
 const Home = () => {
   return (
     <div className="bg-primary/10 h-full overflow-hidden">
-      <ParticlesContainer />
+      {/* <ParticlesContainer /> */}
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/5 to-black/5">
         <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
           <motion.h1
