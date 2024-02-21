@@ -18,7 +18,7 @@ const Socials = () => {
         <RiLinkedinBoxLine />
       </Link>
       <Link
-        href={"https://github.com/Frances-Hughes"}
+        href={"https://github.com/Frances-Hughes/my-portfolio"}
         target="_blank"
         className="hover:text-accent transition-all duration-300"
       >

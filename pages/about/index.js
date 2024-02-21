@@ -5,13 +5,13 @@ import Circles from "../../components/Circles";
 // Icons
 import {
   GiMountainClimbing,
-  GiGrandPiano,
   GiViolin,
-  GiCupcake,
   GiCommercialAirplane,
   GiTennisRacket,
   GiSittingDog,
   GiHiking,
+  GiCakeSlice,
+  GiPianoKeys,
 } from "react-icons/gi";
 import { SiUnrealengine, SiPlaystation5 } from "react-icons/si";
 import { FaSteam } from "react-icons/fa";
@@ -61,6 +61,10 @@ const aboutData = [
         stage: "2023 - 2024",
       },
       {
+        title: "Property Management (Barfoot & Thompson)",
+        stage: "2023",
+      },
+      {
         title: "PCO Officer (Estates Team) - ASB Bank",
         stage: "2022",
       },
@@ -90,8 +94,8 @@ const aboutData = [
           <SiUnrealengine key="unrealEngine" />,
           <SiPlaystation5 key="playstation5" />,
           <FaSteam key="steam" />,
-          <GiCupcake key="cupcake" />,
-          <GiGrandPiano key="piano" />,
+          <GiCakeSlice key="cake" />,
+          <GiPianoKeys key="piano" />,
           <GiViolin key="violin" />,
         ],
       },

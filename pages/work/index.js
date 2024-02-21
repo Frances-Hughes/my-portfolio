@@ -4,8 +4,6 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 
 const Work = () => {
-  // Adjust the main content's padding to account for the header and navbar heights
-  // Assuming the header is 50px high and the navbar is 80px high
   return (
     <div
       className="flex flex-col items-center justify-center text-center relative overflow-y-auto"
@@ -74,9 +72,9 @@ const Work = () => {
         <p className="relative bg-white/10 backdrop-blur-sm p-4 text-center text-white my-12">
           I have made a range of projects over the past 2 years - from
           university projects, to hobby projects, to building websites for
-          friends, family, and clients. This project, Movie Manor, was built
-          using Material UI, my preferred React component library. It utilizes
-          the TMDB API to fetch and display movie data on interactive cards.
+          friends and family. This project, Movie Manor, was built using
+          Material UI, my preferred React component library. It utilizes the
+          TMDB API to fetch and display movie data on interactive cards.
           Deployed via Vercel, it offers instant access without the need for
           manual setup. The source code for my repository is available for
           viewing
