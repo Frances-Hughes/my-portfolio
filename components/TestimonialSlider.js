@@ -92,6 +92,13 @@ const testimonialData = [
       "I can confidently say that Frances' websites reflect her talent and work ethic. She is very talented and I would definitely highly recommend her for any websites you are wanting to create!",
   },
   {
+    image: "/Natalie.png",
+    name: "Natalie Clark",
+    position: "Court Registry Officer",
+    message:
+      "Frances's exceptional problem-solving skills, multilingual fluency, and ability to adapt quickly made her an invaluable asset to our team at Hamilton DC. She very quickly became our go-to person for complex queries.",
+  },
+  {
     image: "/Brook.jpg",
     name: "Brook Horan",
     position: "Policy Advisor",
@@ -105,13 +112,6 @@ const testimonialData = [
     position: "Associate",
     message:
       "During the time I have known Frances, she has consistently lived out her values of being a kind, reliable, dilligent and sincere person. I have seen her impressive work ethic throughout the years - she goes the extra mile without needing to be asked, and she never stops working on herself.",
-  },
-  {
-    image: "/Natalie.png",
-    name: "Natalie Clark",
-    position: "Court Registry Officer",
-    message:
-      "Having had the privilege of working alongside Frances, I can attest to her exceptional problem-solving skills and rapid learning capabilities.",
   },
   {
     image: "/Cassey.jpg",

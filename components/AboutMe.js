@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <div className="typewriter font-light text-white ">
+    <div className="typewriter font-light text-white px-4">
       <p className="whitespace-nowrap">
         Having graduated from three New Zealand Universities,
       </p>

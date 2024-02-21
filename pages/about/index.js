@@ -66,7 +66,7 @@ const aboutData = [
       },
       {
         title: "Ministry of Justice (Auckland DC, Hamilton DC)",
-        stage: "2016-2022",
+        stage: "2017-2022",
       },
     ],
   },
@@ -102,20 +102,20 @@ const aboutData = [
 const About = () => {
   const [index, setIndex] = useState(0);
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+    <div className="h-full bg-primary/30 py-32 text-center xl:text-left px-4">
       <Circles />
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         <div className="flex-1 flex flex-col justify-center">
-          <h2 className="h2">
-            <span className="text-accent">Front-end developer</span> with a
-            passion. Reach out today!
+          <h2 className="h2 px-4">
+            <span className="text-accent font-bold">Front-end developer</span>{" "}
+            with a passion. Reach out today!
           </h2>
-          <div className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
+          <div className="max-w-[450px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
             <AboutMe />
           </div>
         </div>
         <div className="flex flex-col w-full xl:max-w-[48%] h-[480px]">
-          <div className="text-xl flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 justify-between">
+          <div className="flex gap-x-3 text-lg  xl:gap-x-8 mx-auto xl:mx-0 mb-4 justify-between">
             {aboutData.map((item, itemIndex) => (
               <div
                 key={itemIndex}
