@@ -26,7 +26,7 @@ const Avatar = () => {
 
       <div className="z-10">
         <Image
-          src={"/mainimage.png"}
+          src={"/mainimg.svg"}
           width={553}
           height={506}
           alt="avatar"
