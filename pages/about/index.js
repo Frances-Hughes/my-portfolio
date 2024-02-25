@@ -118,7 +118,7 @@ const About = () => {
             <AboutMe />
           </div>
         </div>
-        <div className="flex flex-col w-full xl:max-w-[48%] h-[480px]">
+        <div className="flex flex-col w-full xl:max-w-[48%] h-[480px] mb-36">
           <div className="flex gap-x-3 text-lg  xl:gap-x-8 mx-auto xl:mx-0 mb-4 justify-between">
             {aboutData.map((item, itemIndex) => (
               <div

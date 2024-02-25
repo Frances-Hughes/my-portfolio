@@ -96,7 +96,7 @@ const testimonialData = [
     name: "Natalie Clark",
     position: "Court Registry Officer",
     message:
-      "Frances's exceptional problem-solving skills, multilingual fluency, and ability to adapt quickly made her an invaluable asset to our team at Hamilton DC. She very quickly became our go-to person for complex queries.",
+      "During her time at Hamilton DC, Frances proved to be an invaluable asset, leveraging her impressive problem-solving abilities and quick learning skills to enhance our team's performance.",
   },
   {
     image: "/Brook.jpg",
@@ -114,11 +114,11 @@ const testimonialData = [
       "During the time I have known Frances, she has consistently lived out her values of being a kind, reliable, dilligent and sincere person. I have seen her impressive work ethic throughout the years - she goes the extra mile without needing to be asked, and she never stops working on herself.",
   },
   {
-    image: "/Cassey.jpg",
+    image: "/CasseyBliss.png",
     name: "Cassey Bliss",
-    position: "Solicitor",
+    position: "Advocate",
     message:
-      "I have had the pleasure of working with Frances on various projects and would have to say her attention to detail is out of this world.",
+      "I have had the pleasure of working with Frances on various projects and would have to say her attention to detail is out of this world. Not only is Frances a friendly, trustworth individual, but her knowledge base is extensive and she approaches her work with a high level of skill and professionalism.",
   },
 ];
 

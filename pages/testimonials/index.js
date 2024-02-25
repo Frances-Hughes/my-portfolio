@@ -1,5 +1,5 @@
 import React from "react";
-import TestimonialSlider from "../../components/TestimonialSlider";
+import TestimonialSliders from "../../components/TestimonialSliders";
 import { TypeAnimation } from "react-type-animation";
 
 const Testimonials = () => {
@@ -19,7 +19,7 @@ const Testimonials = () => {
           />
         </div>
         <div>
-          <TestimonialSlider />
+          <TestimonialSliders />
         </div>
       </div>
     </div>
