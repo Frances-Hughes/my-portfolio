@@ -120,6 +120,13 @@ const testimonialData = [
     message:
       "I have had the pleasure of working with Frances on various projects and would have to say her attention to detail is out of this world. Not only is Frances a friendly, trustworth individual, but her knowledge base is extensive and she approaches her work with a high level of skill and professionalism.",
   },
+  {
+    image: "/Danielle.png",
+    name: "Danni Stone-Slater",
+    position: "Teacher",
+    message:
+      " Frances is dedicated, hard working and a fantastic problem solver. She has a real passion for programming and makes a mean chocolate brownie!",
+  },
 ];
 
 export default TestimonialSlider;
