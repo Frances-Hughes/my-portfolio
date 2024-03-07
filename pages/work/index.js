@@ -15,7 +15,7 @@ const Work = () => {
     >
       <div className="grid">
         <h2 className="h2">
-          Highlighted <span className="text-accent">project</span> of mine:
+          Highlighted <span className="text-accent">projects</span> of mine:
         </h2>
         <div className="py-12">
           <TypeAnimation
@@ -27,60 +27,84 @@ const Work = () => {
             ]}
             wrapper="span"
             speed={50}
-            style={{ fontSize: "22", display: "inline-block" }}
+            style={{ fontSize: "22px", display: "inline-block" }}
           />
         </div>
       </div>
 
-      <div className="px-12 md:px-36 grid gap-5 lg:flex lg:justify-center">
-        <motion.div
-          className="flex items-center justify-center"
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            position: "relative",
-            bottom: "0",
-            borderRadius: "6px",
-            width: "100%",
-          }}
-          animate={{
-            y: [0, -12, 0],
-            transition: {
-              duration: 4,
-              repeat: Infinity,
-              repeatType: "reverse",
-              ease: "easeInOut",
-            },
-          }}
-        >
-          <a
-            href="https://movie-manor.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="relative"
+      <div className="px-12 md:px-36 grid gap-5 lg:flex lg:flex-col lg:justify-center lg:items-center">
+        <div className="flex flex-col md:flex-row w-full gap-5">
+          <motion.div
+            className="flex flex-col items-center justify-center w-full md:w-1/2"
+            animate={{
+              y: [0, 24, 0], // Start from the original position, move down, then back to the original position
+              transition: {
+                duration: 4,
+                repeat: Infinity,
+                repeatType: "reverse",
+                ease: "easeInOut",
+              },
+            }}
           >
-            <Image
-              src={"/movie-manor.png"}
-              width={737}
-              height={678}
-              alt="Movie Manor project preview"
-              className="translate-z-0 w-full h-full"
-            />
-          </a>
-        </motion.div>
-        <p className="relative bg-white/10 backdrop-blur-sm p-4 text-center text-white my-12 rounded-md">
+            <a
+              href="https://movie-manor.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative mb-5 w-full"
+            >
+              <Image
+                src={"/movie-manor.png"}
+                layout="responsive"
+                width={737}
+                height={678}
+                alt="Movie Manor project preview"
+              />
+            </a>
+          </motion.div>
+
+          <motion.div
+            className="flex flex-col items-center justify-center w-full md:w-1/2"
+            animate={{
+              y: [0, -24, 0], // Start from the original position, move up, then back to the original position
+              transition: {
+                duration: 4,
+                repeat: Infinity,
+                repeatType: "reverse",
+                ease: "easeInOut",
+              },
+            }}
+          >
+            <a
+              href="https://video-vortex-gamma.vercel.app/#/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative w-full"
+            >
+              <Image
+                src={"/Video-vortex.png"}
+                layout="responsive"
+                width={737}
+                height={678}
+                alt="Video Vortex project preview"
+              />
+            </a>
+          </motion.div>
+        </div>
+        <p className="relative bg-white/10 backdrop-blur-sm p-4 text-center text-white my-6 rounded-md w-full">
           I have made a range of projects over the past 2 years - from
           university projects, to hobby projects, to building websites for
           friends and family. My Portfolio was made using React and Tailwind
-          CSS, while my highlighted project on this page, Movie Manor, was built
-          using Material UI, my preferred React component library. It utilizes
-          the TMDB API to fetch and display movie data on interactive cards.
-          Deployed via Vercel, it offers instant access without the need for
-          manual setup. The source code for my repository is available for
-          viewing
+          CSS, while my highlighted projects on this page, Movie Manor and Video
+          Vortex, were built using Material UI, my preferred React component
+          library. Movie Manor utilizes the TMDB API to fetch and display movie
+          data on interactive cards whereas Video-Vortex, my other highlighted
+          project, utilizes RapidAPI to fetch Youtube video data and display it
+          on different channels and pages. Deployed via Vercel, both projects
+          offer instant access without the need for manual setup. The source
+          code for my repositories are pinned to my Github profile and available
+          for viewing
           <a
-            href="https://www.github.com/Frances-Hughes/movie-manor"
+            href="https://www.github.com/Frances-Hughes"
             target="_blank"
             rel="noopener noreferrer"
             className="text-accent font-bold pl-1"
