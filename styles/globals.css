@@ -20,7 +20,7 @@
 
 @layer base {
   body {
-    @apply bg-primary overflow-auto leading-relaxed;
+    @apply bg-primary leading-relaxed;
   }
   .page {
     @apply w-full overflow-auto h-screen;

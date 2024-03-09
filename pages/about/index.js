@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AboutMe from "../../components/AboutMe";
 import Circles from "../../components/Circles";
 
@@ -57,12 +57,8 @@ const aboutData = [
     title: "Experience",
     info: [
       {
-        title: "Front-End Web Developement (Freelance)",
-        stage: "2023 - 2024",
-      },
-      {
-        title: "Property Management (Barfoot & Thompson)",
-        stage: "2023",
+        title: "Junior Front-End Web Developer - Simmaren",
+        stage: "February 2024 - present",
       },
       {
         title: "PCO Officer (Estates Team) - ASB Bank",
@@ -105,21 +101,40 @@ const aboutData = [
 
 const About = () => {
   const [index, setIndex] = useState(0);
+  const [containerHeight, setContainerHeight] = useState("calc(100vh - 50px)");
+
+  useEffect(() => {
+    const handleResize = () => {
+      const newHeight = `100vh`;
+      setContainerHeight(newHeight);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left px-4">
+    <div
+      className="bg-primary/30 pt-24 text-center xl:text-left px-4 xl:pt-56"
+      style={{ minHeight: containerHeight }}
+    >
       <Circles />
-      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
-        <div className="flex-1 flex flex-col justify-center">
-          <h2 className="h2 px-4">
-            <span className="text-accent font-bold">Front-end developer</span>{" "}
-            with a passion. Reach out today!
-          </h2>
-          <div className="max-w-[450px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
-            <AboutMe />
+      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 relative gap-y-6">
+        <div className="flex-1 flex flex-col relative top-[-30px] items-center">
+          <div className="h2 px-4 xs:h3 text-center z-30">
+            <span className="header-typewriter text-accent font-bold text-wrap mx-2 ">
+              Front-end developer
+            </span>
+            <div className="mx-2">with a passion.</div>
+            <div className="mx-2">Reach out today!</div>
+          </div>
+          <div className="max-w-[450px] mx-auto xl:mx-0 mb-6  px-2 xl:px-0">
+            <AboutMe className="" />
           </div>
         </div>
-        <div className="flex flex-col w-full xl:max-w-[48%] h-[480px] mb-36">
-          <div className="flex gap-x-3 text-lg  xl:gap-x-8 mx-auto xl:mx-0 mb-4 justify-between">
+        <div className="flex flex-col w-full xl:max-w-[48%] h-[380px] mb-32">
+          <div className="flex gap-x-2 text-lg md:gap-x-8 mx-auto xl:mx-0 mb-4 justify-between">
             {aboutData.map((item, itemIndex) => (
               <div
                 key={itemIndex}
@@ -134,15 +149,15 @@ const About = () => {
               </div>
             ))}
           </div>
-          <div className="p-4 bg-white/10 rounded-lg py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
-            {aboutData[index].info.map((item, itemIndex) => (
+          <div className="p-4 bg-white/10 rounded-lg py-2 xl:py-2 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-center text-center">
+            {aboutData[index]?.info?.map((item, itemIndex) => (
               <div
                 key={itemIndex}
-                className="flex-1 flex flex-col md:flex-row max-w-max gap-x-14 items-center text-white/60"
+                className=" flex-col  max-w-max items-center text-white/80"
               >
-                <div className="font-light mb-2 md:mb-0">{item.title}</div>
-                <div>{item.provider}</div>
-                <div>{item.stage}</div>
+                <div className="font-bold">{item.title}</div>
+                <div className="">{item.provider}</div>
+                <div className="mb-4">{item.stage}</div>
                 <div className="flex gap-x-4">
                   {item.icons?.map((icon, iconIndex) => (
                     <div key={iconIndex} className="text-2xl text-white">
