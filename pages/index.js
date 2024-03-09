@@ -30,9 +30,9 @@ const Home = () => {
           >
             <TypeAnimation
               sequence={[
-                "Trained in full stack developement",
+                "Trained in full stack development",
                 1000,
-                "Dabbled in game developement",
+                "Dabbled in game development",
                 1000,
                 "Passionate about frontend development!",
                 1000,
