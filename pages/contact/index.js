@@ -70,10 +70,10 @@ const Contact = () => {
     // EmailJS sendForm method
     emailjs
       .sendForm(
-        "service_m54z2da",
-        "template_63rpyw9",
+        "service_yqp6pto",
+        "template_d5msavh",
         form.current,
-        "FDDJruNoWmKigmd8E"
+        "X7yb0FwjZvwPBpsAe"
       )
       .then(
         (result) => {
@@ -88,7 +88,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="h-full bg-primary/30">
+    <div className="bg-primary/30 py-10">
       <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
         <div className="flex flex-col w-full max-w-[700px]">
           <motion.h2

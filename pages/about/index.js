@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import AboutMe from "../../components/AboutMe";
 import Circles from "../../components/Circles";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
 
 // Icons
 import {
@@ -122,18 +124,36 @@ const About = () => {
       <Circles />
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 relative gap-y-6">
         <div className="flex-1 flex flex-col relative top-[-30px] items-center">
-          <div className="h2 px-4 xs:h3 text-center z-30">
+          <motion.div
+            variants={fadeIn("left", 0.4)}
+            initial="hidden"
+            exit="hidden"
+            animate="show"
+            className="h2 px-4 xs:h3 text-center z-30"
+          >
             <span className="header-typewriter text-accent font-bold text-wrap mx-2 ">
               Front-end developer
             </span>
             <div className="mx-2">with a passion.</div>
             <div className="mx-2">Reach out today!</div>
-          </div>
-          <div className="max-w-[450px] mx-auto xl:mx-0 mb-6  px-2 xl:px-0">
-            <AboutMe className="" />
-          </div>
+          </motion.div>
+          <motion.div
+            variants={fadeIn("right", 0.4)}
+            initial="hidden"
+            exit="hidden"
+            animate="show"
+            className="max-w-[450px] xl:mx-0 mb-2 xl:px-0"
+          >
+            <AboutMe />
+          </motion.div>
         </div>
-        <div className="flex flex-col w-full xl:max-w-[48%] h-[380px] mb-32">
+        <motion.div
+          variants={fadeIn("down", 0.4)}
+          initial="hidden"
+          exit="hidden"
+          animate="show"
+          className="flex flex-col w-full xl:max-w-[48%] h-[380px] mb-32"
+        >
           <div className="flex gap-x-2 text-lg md:gap-x-8 mx-auto xl:mx-0 mb-4 justify-between">
             {aboutData.map((item, itemIndex) => (
               <div
@@ -168,7 +188,7 @@ const About = () => {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
