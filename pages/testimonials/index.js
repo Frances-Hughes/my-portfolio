@@ -4,7 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const Testimonials = () => {
   return (
-    <div className="h-full py-32 text-center">
+    <div className="py-36 text-center">
       <div className="container mx-auto h-full flex flex-col justify-center">
         <div className="mb-8 xl:mb-0 font-bold">
           <TypeAnimation
