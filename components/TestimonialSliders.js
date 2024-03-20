@@ -22,7 +22,7 @@ const TestimonialSlider = () => {
         clickable: true,
       }}
       modules={[Navigation, Pagination]}
-      className="h-[440px] text-sm md:text-base"
+      className="h-[340px] text-sm md:text-base"
     >
       {testimonialData.map((person, index) => {
         return (
@@ -30,14 +30,12 @@ const TestimonialSlider = () => {
             <motion.div
               variants={fadeIn("right", 0.2)}
               initial="hidden"
-              // exit="hidden"
+              exit="hidden"
               animate="show"
               className="flex flex-col items-center md:flex-row gap-x-8 h-full px-16"
             >
-              {/* Avatar, name, position */}
               <div className="w-full max-w-[300px] flex flex-col  relative mx-auto xl:mx-0">
                 <div className="flex flex-col justify-center text-center">
-                  {/* avatar */}
                   <div className="mb-2 mx-auto">
                     <Image
                       src={person.image}
@@ -47,9 +45,7 @@ const TestimonialSlider = () => {
                       class="rounded-full"
                     />
                   </div>
-                  {/* name */}
                   <div className="text-lg">{person.name}</div>
-                  {/* position */}
                   <div className="text-[12px] text-accent font-bold uppercase tracking-widest my-1">
                     {person.position}
                   </div>
@@ -60,7 +56,6 @@ const TestimonialSlider = () => {
                 <div className="m-2">
                   <FaQuoteLeft className="text-sm text-accent/90 " />
                 </div>
-
                 <div classsName="xl:text-lg text-center">{person.message}</div>
                 <div className="m-2 flex items-center justify-end">
                   <FaQuoteRight className="text-sm text-accent/90 " />
