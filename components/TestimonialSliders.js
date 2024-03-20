@@ -30,7 +30,7 @@ const TestimonialSlider = () => {
             <motion.div
               variants={fadeIn("right", 0.2)}
               initial="hidden"
-              exit="hidden"
+              // exit="hidden"
               animate="show"
               className="flex flex-col items-center md:flex-row gap-x-8 h-full px-16"
             >
@@ -55,13 +55,12 @@ const TestimonialSlider = () => {
                   </div>
                 </div>
               </div>
-              {/* quote and message */}
+
               <div className="md:bg-white/40 flex-1 flex flex-col p-2 rounded-md ">
-                {/* quote icon */}
                 <div className="m-2">
                   <FaQuoteLeft className="text-sm text-accent/90 " />
                 </div>
-                {/* message */}
+
                 <div classsName="xl:text-lg text-center">{person.message}</div>
                 <div className="m-2 flex items-center justify-end">
                   <FaQuoteRight className="text-sm text-accent/90 " />
