@@ -88,13 +88,16 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-primary/30 py-10">
-      <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
+    <div className="bg-primary/30 py-10 ">
+      <div
+        className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full"
+        style={{ minHeight: "calc(100vh - 20px)" }}
+      >
         <div className="flex flex-col w-full max-w-[700px]">
           <motion.h2
             variants={fadeIn("down", 0.2)}
             initial="hidden"
-            exit="hidden"
+            // exit="hidden"
             animate="show"
             className="h2 text-center text-accent"
           >
@@ -103,7 +106,7 @@ const Contact = () => {
           <motion.h3
             variants={fadeIn("left", 0.2)}
             initial="hidden"
-            exit="hidden"
+            // exit="hidden"
             animate="show"
             className="h3 text-center mb-12"
           >
@@ -126,7 +129,7 @@ const Contact = () => {
             onSubmit={sendEmail}
             variants={fadeIn("up", 0.4)}
             initial="hidden"
-            exit="hidden"
+            // exit="hidden"
             animate="show"
             className="flex-1 flex flex-col gap-6 w-full mx-auto"
           >

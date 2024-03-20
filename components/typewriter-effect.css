@@ -1,83 +1,58 @@
 .typewriter p {
-  font-weight: 100;
-  /* font-size: 1rem; */
+  font-weight: 400;
   overflow: hidden;
   color: white;
 }
 
+.typewriter li {
+  font-weight: 400;
+  color: white;
+  overflow: hidden;
+}
+
 .responsive-font {
-  font-size: 0.8rem; /* Default font size for extra small and small screens */
+  font-size: 1rem; /* Default font size for extra small and small screens */
   color: white;
 }
 
 .typewriter p:nth-child(1) {
   width: 100%;
-  animation: type 5s;
+  animation: type 3s;
 }
 
 .typewriter p:nth-child(2) {
   width: 100%;
   opacity: 0;
-  animation: type2 5s;
-  animation-delay: 3.5s;
+  animation: type2 2.7s;
+  animation-delay: 2.8s;
   animation-fill-mode: forwards;
 }
 
 .typewriter p:nth-child(3) {
   width: 100%;
   opacity: 0;
-  animation: type3 5s;
-  animation-delay: 7.5s;
+  animation: type2 2.7s;
+  animation-delay: 5.3s;
   animation-fill-mode: forwards;
 }
 
 .typewriter p:nth-child(4) {
   width: 100%;
   opacity: 0;
-  animation: type4 5s linear;
-  animation-delay: 11s;
+  animation: type2 2.7s linear;
+  animation-delay: 7.7s;
   animation-fill-mode: forwards;
 }
 
 .typewriter p:nth-child(5) {
   width: 100%;
   opacity: 0;
-  animation: type5 5s linear;
-  animation-delay: 15.5s;
+  animation: type2 2.7s linear;
+  animation-delay: 10.3s;
   animation-fill-mode: forwards;
 }
 
-.typewriter p:nth-child(6) {
-  width: 100%;
-  opacity: 0;
-  animation: type6 5s linear;
-  animation-delay: 20s;
-  animation-fill-mode: forwards;
-}
-
-.typewriter p:nth-child(7) {
-  width: 100%;
-  opacity: 0;
-  animation: type7 5s linear;
-  animation-delay: 24s;
-  animation-fill-mode: forwards;
-}
-
-.typewriter p:nth-child(8) {
-  width: 100%;
-  opacity: 0;
-  animation: type8 5s linear;
-  animation-delay: 29s;
-  animation-fill-mode: forwards;
-}
-
-.typewriter p:nth-child(9) {
-  width: 100%;
-  opacity: 0;
-  animation: type9 5s linear;
-  animation-delay: 34s;
-  animation-fill-mode: forwards;
-}
+/* animation keyframes below */
 
 @keyframes type {
   0% {
@@ -100,93 +75,9 @@
   }
 }
 
-@keyframes type3 {
-  0% {
-    width: 0;
-  }
-  1% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes type4 {
-  0% {
-    width: 0;
-  }
-  1% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes type5 {
-  0% {
-    width: 0;
-  }
-  1% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes type6 {
-  0% {
-    width: 0;
-  }
-  1% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes type7 {
-  0% {
-    width: 0;
-  }
-  1% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes type8 {
-  0% {
-    width: 0;
-  }
-  1% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes type9 {
-  0% {
-    width: 0;
-  }
-  1% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @media (min-width: 768px) {
   .responsive-font {
-    font-size: 1rem; /* Font size for medium and larger screens */
+    font-size: 1.1rem; /* Font size for medium and larger screens */
   }
 }
 
@@ -195,158 +86,78 @@
 .typewriter li:nth-child(1) {
   width: 100%;
   opacity: 0;
-  animation: type10 10s;
-  animation-delay: 1s;
+  animation: type2 2.7s linear;
+  animation-delay: 13s;
   animation-fill-mode: forwards;
 }
 
 .typewriter li:nth-child(2) {
   width: 100%;
   opacity: 0;
-  animation: type11 5s;
-  animation-delay: 3.5s;
+  animation: type2 2.7s linear;
+  animation-delay: 15.6s;
   animation-fill-mode: forwards;
 }
 
 .typewriter li:nth-child(3) {
   width: 100%;
   opacity: 0;
-  animation: type11 5s;
-  animation-delay: 3.5s;
+  animation: type2 2.7s linear;
+  animation-delay: 18.3s;
   animation-fill-mode: forwards;
 }
 
 .typewriter li:nth-child(4) {
   width: 100%;
   opacity: 0;
-  animation: type11 5s;
-  animation-delay: 3.5s;
+  animation: type2 2.7s linear;
+  animation-delay: 20.7s;
   animation-fill-mode: forwards;
 }
 
 .typewriter li:nth-child(5) {
   width: 100%;
   opacity: 0;
-  animation: type12 5s;
-  animation-delay: 7.5s;
+  animation: type2 0.5s linear;
+  animation-delay: 23s;
   animation-fill-mode: forwards;
 }
 
 .typewriter li:nth-child(6) {
   width: 100%;
   opacity: 0;
-  animation: type11 5s;
-  animation-delay: 3.5s;
+  animation: type2 2.7s linear;
+  animation-delay: 23.7s;
   animation-fill-mode: forwards;
 }
 
 .typewriter li:nth-child(7) {
   width: 100%;
   opacity: 0;
-  animation: type13 5s linear;
-  animation-delay: 11s;
+  animation: type2 2.7s linear;
+  animation-delay: 26.2s;
   animation-fill-mode: forwards;
 }
 
 .typewriter li:nth-child(8) {
   width: 100%;
   opacity: 0;
-  animation: type11 5s;
-  animation-delay: 3.5s;
+  animation: type2 2.7s linear;
+  animation-delay: 28.8s;
   animation-fill-mode: forwards;
 }
 .typewriter li:nth-child(9) {
   width: 100%;
   opacity: 0;
-  animation: type14 5s linear;
-  animation-delay: 15.5s;
+  animation: type2 2.7s linear;
+  animation-delay: 31.3s;
   animation-fill-mode: forwards;
 }
 
 .typewriter li:nth-child(10) {
   width: 100%;
   opacity: 0;
-  animation: type11 5s;
-  animation-delay: 3.5s;
+  animation: type2 2.7s linear;
+  animation-delay: 33.9s;
   animation-fill-mode: forwards;
-}
-
-.typewriter li:nth-child(11) {
-  width: 100%;
-  opacity: 0;
-  animation: type15 5s linear;
-  animation-delay: 20s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes type10 {
-  0% {
-    width: 0;
-  }
-  1% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes type11 {
-  0% {
-    width: 0;
-  }
-  1% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes type12 {
-  0% {
-    width: 0;
-  }
-  1% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes type13 {
-  0% {
-    width: 0;
-  }
-  1% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes type14 {
-  0% {
-    width: 0;
-  }
-  1% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes type15 {
-  0% {
-    width: 0;
-  }
-  1% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
 }

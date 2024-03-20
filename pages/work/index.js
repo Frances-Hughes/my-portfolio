@@ -37,34 +37,6 @@ const Work = () => {
           <motion.div
             className="flex flex-col items-center justify-center w-full md:w-1/2"
             animate={{
-              y: [0, 24, 0], // Start from the original position, move down, then back to the original position
-              transition: {
-                duration: 4,
-                repeat: Infinity,
-                repeatType: "reverse",
-                ease: "easeInOut",
-              },
-            }}
-          >
-            <a
-              href="https://movie-manor.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="relative mb-5 w-full"
-            >
-              <Image
-                src={"/movie-manor.png"}
-                layout="responsive"
-                width={737}
-                height={678}
-                alt="Movie Manor project preview"
-              />
-            </a>
-          </motion.div>
-
-          <motion.div
-            className="flex flex-col items-center justify-center w-full md:w-1/2"
-            animate={{
               y: [0, -24, 0], // Start from the original position, move up, then back to the original position
               transition: {
                 duration: 4,
@@ -81,7 +53,7 @@ const Work = () => {
               className="relative w-full"
             >
               <Image
-                src={"/Video-vortex.png"}
+                src={"/video_vortex.png"}
                 layout="responsive"
                 width={737}
                 height={678}
@@ -89,11 +61,45 @@ const Work = () => {
               />
             </a>
           </motion.div>
+          <motion.div
+            className="flex flex-col items-center justify-center w-full md:w-1/2"
+            animate={{
+              y: [0, 24, 0], // Start from the original position, move down, then back to the original position
+              transition: {
+                duration: 4,
+                repeat: Infinity,
+                repeatType: "reverse",
+                ease: "easeInOut",
+              },
+            }}
+          >
+            <a
+              href="https://movie-manor.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative mb-5 w-full"
+            >
+              <Image
+                src={"/movie_manor.png"}
+                layout="responsive"
+                width={737}
+                height={678}
+                alt="Movie Manor project preview"
+              />
+            </a>
+          </motion.div>
         </div>
         <p className="relative bg-white/10 backdrop-blur-sm p-4 text-center text-white my-6 rounded-md w-full">
-          I have made a range of projects over the past 2 years - from
-          university projects, to hobby projects, to building websites for
-          friends and family. My Portfolio was made using React and Tailwind
+          I have worked on a range of projects over the past couple of years,
+          and am currently experimenting with creating custom chatrooms using
+          Open AI - which will be added to my hobby Github account once
+          completed. Before assuming my current role as a junior front-end
+          developer at Simmaren, I worked as a contractor. This role immediately
+          followed the completion of my apprenticeship program at Enspiral Dev
+          Academy in early 2023, where I earned a level 6 NZQA certification. In
+          addition to my professional journey, I hold a Certificate in Business
+          Studies from Massey University, and a Bachelors Degree from the
+          University of Auckland. My Portfolio was made using React and Tailwind
           CSS, while my highlighted projects on this page, Movie Manor and Video
           Vortex, were built using Material UI, my preferred React component
           library. Movie Manor utilizes the TMDB API to fetch and display movie
