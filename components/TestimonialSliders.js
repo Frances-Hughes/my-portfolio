@@ -32,7 +32,7 @@ const TestimonialSliders = () => {
               initial="hidden"
               exit="hidden"
               animate="show"
-              className="flex justify-around items-center md:flex-row gap-x-8 h-full px-16"
+              className="flex flex-col items-center  gap-x-8 h-full px-16"
             >
               <div className="w-full max-w-[300px] flex justify-around mx-auto xl:mx-0">
                 <div className="flex flex-col justify-center text-center">
@@ -52,7 +52,7 @@ const TestimonialSliders = () => {
                 </div>
               </div>
 
-              <div className="md:bg-white/40 flex-1 flex flex-col p-2 rounded-md ">
+              <div className=" flex-1 flex flex-col p-2 rounded-md ">
                 <div className="m-2">
                   <FaQuoteLeft className="text-sm text-accent/90 " />
                 </div>
