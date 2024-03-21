@@ -124,7 +124,6 @@ const About = () => {
       className="bg-primary/30 pt-24 text-center xl:text-left px-4 xl:pt-56"
       style={{ minHeight: containerHeight }}
     >
-      <div className="blob hidden xl:flex z-10"></div>
       <Circles />
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 relative gap-y-6">
         <div className="flex-1 flex flex-col relative top-[-30px] items-center">
