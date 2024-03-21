@@ -44,7 +44,7 @@ const aboutData = [
     title: "Awards",
     info: [
       {
-        title: "3 x Certificate of Distinction - Massey University",
+        title: "4 x Certificate of Distinction - Massey University",
         stage: "2022",
       },
       {
