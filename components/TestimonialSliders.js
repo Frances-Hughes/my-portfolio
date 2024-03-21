@@ -32,7 +32,7 @@ const TestimonialSliders = () => {
               initial="hidden"
               exit="hidden"
               animate="show"
-              className="flex flex-col items-center md:flex-row gap-x-8 h-full px-16"
+              className="flex justify-around items-center md:flex-row gap-x-8 h-full px-16"
             >
               <div className="w-full max-w-[300px] flex justify-around mx-auto xl:mx-0">
                 <div className="flex flex-col justify-center text-center">
