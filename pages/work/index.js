@@ -47,24 +47,24 @@ const Work = () => {
             }}
           >
             <a
-              href="https://video-vortex-gamma.vercel.app/#/"
+              href="https://photographer-site-gamma.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="relative w-full"
             >
               <Image
-                src={"/video_vortex.png"}
+                src={"/ayano_photography.png"}
                 layout="responsive"
                 width={737}
                 height={678}
-                alt="Video Vortex project preview"
+                alt="Ayano Masuda Photography project preview"
               />
             </a>
           </motion.div>
           <motion.div
             className="flex flex-col items-center justify-center w-full md:w-1/2"
             animate={{
-              y: [0, 24, 0], // Start from the original position, move down, then back to the original position
+              y: [0, 24, 0],
               transition: {
                 duration: 4,
                 repeat: Infinity,
@@ -100,15 +100,15 @@ const Work = () => {
           addition to my professional journey, I hold a Certificate in Business
           Studies from Massey University, and a Bachelors Degree from the
           University of Auckland. My Portfolio was made using React and Tailwind
-          CSS, while my highlighted projects on this page, Movie Manor and Video
-          Vortex, were built using Material UI, my preferred React component
-          library. Movie Manor utilizes the TMDB API to fetch and display movie
-          data on interactive cards whereas Video-Vortex, my other highlighted
-          project, utilizes RapidAPI to fetch Youtube video data and display it
-          on different channels and pages. Deployed via Vercel, both projects
-          offer instant access without the need for manual setup. The source
-          code for my repositories are pinned to my Github profile and available
-          for viewing
+          CSS, while my highlighted projects on this page, Movie Manor and Ayano
+          Masuda Photography, were built using Material UI, my preferred React
+          component library. Movie Manor utilizes the TMDB API to fetch and
+          display movie data on interactive cards whereas Ayano Photography, my
+          other highlighted project is a fun website I am building for a friend
+          who is turning a long-term hobby into a business. Deployed via Vercel,
+          both projects offer instant access without the need for manual setup.
+          The source code for my repositories are pinned to my Github Hobby
+          profile and available for viewing
           <a
             href="https://www.github.com/Frances-Hughes"
             target="_blank"

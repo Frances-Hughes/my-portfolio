@@ -106,7 +106,6 @@ const Contact = () => {
           <motion.h3
             variants={fadeIn("left", 0.2)}
             initial="hidden"
-            // exit="hidden"
             animate="show"
             className="h3 text-center mb-12"
           >

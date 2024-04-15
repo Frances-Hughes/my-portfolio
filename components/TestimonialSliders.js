@@ -77,7 +77,7 @@ const testimonialData = [
   {
     image: "/Ayano.jpg",
     name: "Ayano Masuda",
-    position: "International Trade / Logistics",
+    position: "Photographer",
     message:
       "Reliable and trustworthy, Frances is full of creative thinking and is very thorough with her work. Beyond her ability to solve problems quickly and precisely, she also has a lovely and friendly character that makes the people in the room feel warm and welcome.",
   },

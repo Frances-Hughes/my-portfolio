@@ -59,16 +59,9 @@ const Home = () => {
             <ProjectsBtn />
           </motion.div>
 
-          <motion.div
-            variants={fadeIn("up", 0.5)}
-            initial="hidden"
-            exit="hidden"
-            animate="show"
-            transition={{ duration: 1, ease: "easeInOut" }}
-            className="w-full h-full max-w-[400px] max-h-[390px] absolute lg:bottom-0 lg:right-[12%]"
-          >
+          <div className="w-full h-full max-w-[400px] max-h-[390px] absolute lg:bottom-0 lg:right-[12%]">
             <Avatar />
-          </motion.div>
+          </div>
         </div>
       </div>
     </div>
