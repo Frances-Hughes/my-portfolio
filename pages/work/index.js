@@ -94,21 +94,22 @@ const Work = () => {
           and am currently experimenting with creating custom chatrooms using
           Open AI - which will be added to my hobby Github account once
           completed. Before assuming my current role as a junior front-end
-          developer at Simmaren, I worked as a contractor. This role immediately
-          followed the completion of my apprenticeship program at Enspiral Dev
-          Academy in early 2023, where I earned a level 6 NZQA certification. In
-          addition to my professional journey, I hold a Certificate in Business
-          Studies from Massey University, and a Bachelors Degree from the
-          University of Auckland. My Portfolio was made using React and Tailwind
-          CSS, while my highlighted projects on this page, Movie Manor and Ayano
-          Masuda Photography, were built using Material UI, my preferred React
+          developer at Simmaren, I worked as a contractor. This role followed
+          the completion of my apprenticeship program at Enspiral Dev Academy in
+          early 2023, where I earned a level 6 NZQA certification. In addition
+          to my professional journey, I hold a Certificate in Business Studies
+          from Massey University, and a Bachelors Degree from the University of
+          Auckland. My Portfolio was made using React and Tailwind CSS, while my
+          highlighted projects on this page, Movie Manor and Ayano Masuda
+          Photography, were built using Material UI, my preferred React
           component library. Movie Manor utilizes the TMDB API to fetch and
-          display movie data on interactive cards whereas Ayano Photography, my
-          other highlighted project is a fun website I am building for a friend
-          who is turning a long-term hobby into a business. Deployed via Vercel,
-          both projects offer instant access without the need for manual setup.
-          The source code for my repositories are pinned to my Github Hobby
-          profile and available for viewing
+          display movie data on interactive cards whereas Ayano Masuda
+          Photography, my other highlighted project is a fun website I am
+          building for a friend/previous colleague who is turning a long-term
+          hobby into a business. Deployed via Vercel, both projects offer
+          instant access without the need for manual setup. The source code for
+          my repositories are pinned to my Github Hobby profile and available
+          for viewing
           <a
             href="https://www.github.com/Frances-Hughes"
             target="_blank"
