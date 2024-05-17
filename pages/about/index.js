@@ -25,7 +25,7 @@ const aboutData = [
       {
         title: "NZQA Diploma in Full Stack Development",
         provider: "Dev Academy, Auckland",
-        stage: "2022-2023",
+        stage: "2022",
       },
       {
         title: "Certificate in Business Studies",
