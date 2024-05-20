@@ -6,7 +6,7 @@ const Testimonials = () => {
   return (
     <div className="py-36 text-center">
       <div className="container mx-auto flex flex-col justify-center">
-        <div className="mb-8 xl:mb-0 font-bold">
+        <div className="mb-12 xl:mb-0 font-bold">
           <TypeAnimation
             sequence={["What people say about me:", 1000]}
             wrapper="span"
@@ -15,7 +15,7 @@ const Testimonials = () => {
               fontSize: "3rem",
               display: "inline-block",
             }}
-            className="text-white"
+            className="text-white my-12"
           />
         </div>
         <div>
