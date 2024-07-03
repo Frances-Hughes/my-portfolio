@@ -111,7 +111,7 @@ const Work = () => {
                 layout="responsive"
                 width={500}
                 height={460}
-                alt="Example Project preview"
+                alt="Basic shopping cart project"
               />
             </a>
           </motion.div>
