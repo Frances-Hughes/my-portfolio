@@ -35,7 +35,7 @@ const Work = () => {
       <div className="px-12 md:px-36 grid gap-5 lg:flex lg:flex-col lg:justify-center lg:items-center">
         <div className="flex flex-col md:flex-row w-full gap-5">
           <motion.div
-            className="flex flex-col items-center justify-center w-full md:w-1/2"
+            className="flex flex-col items-center justify-center w-full md:w-1/3"
             animate={{
               y: [0, -24, 0], // Start from the original position, move up, then back to the original position
               transition: {
@@ -55,14 +55,14 @@ const Work = () => {
               <Image
                 src={"/ayano_photography.png"}
                 layout="responsive"
-                width={737}
-                height={678}
+                width={500}
+                height={460}
                 alt="Ayano Masuda Photography project preview"
               />
             </a>
           </motion.div>
           <motion.div
-            className="flex flex-col items-center justify-center w-full md:w-1/2"
+            className="flex flex-col items-center justify-center w-full md:w-1/3"
             animate={{
               y: [0, 24, 0],
               transition: {
@@ -82,9 +82,36 @@ const Work = () => {
               <Image
                 src={"/movie_manor.png"}
                 layout="responsive"
-                width={737}
-                height={678}
+                width={500}
+                height={460}
                 alt="Movie Manor project preview"
+              />
+            </a>
+          </motion.div>
+          <motion.div
+            className="flex flex-col items-center justify-center w-full md:w-1/3"
+            animate={{
+              y: [0, -24, 0],
+              transition: {
+                duration: 4,
+                repeat: Infinity,
+                repeatType: "reverse",
+                ease: "easeInOut",
+              },
+            }}
+          >
+            <a
+              href="https://basic-cart-frances.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative w-full"
+            >
+              <Image
+                src={"/basic-shopping-cart.png"}
+                layout="responsive"
+                width={500}
+                height={460}
+                alt="Example Project preview"
               />
             </a>
           </motion.div>
